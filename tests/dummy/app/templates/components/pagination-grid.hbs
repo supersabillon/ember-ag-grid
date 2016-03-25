@@ -1,0 +1,9 @@
+<section class="example">
+<h3>1,000 records, Paginated, Option to choose page size, custom scrollbars</h3>
+Page size: <select class="ember-select" onchange={{action "selectPagination" value="target.value"}}>
+  <option value="10">10</option>
+  <option value="100"  selected="selected">100</option>
+  <option value="200">200</option>
+</select>
+{{ag-grid height="500px" width="800px" gridOptions=contacts class="pagination-grid-example" theme="ag-bootstrap-striped"}}
+</section>
