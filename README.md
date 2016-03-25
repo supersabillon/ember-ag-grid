@@ -1,12 +1,62 @@
 # Ember-ag-grid
 
-This README outlines the details of collaborating on this Ember addon.
+Just a simple component to use [ag-grid](https://github.com/ceolter/ag-grid/).
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-ag-grid
+```
+
+## Usage
+
+*app/templates/components/grid-exampple.hbs*
+```handlebars
+{{ ag-grid gridOptions=gridOptions }}
+```
+
+*app/components/grid-exampple.js*
+```javascript
+
+  gridOptions: computed(function() {
+
+    let columnDefs = [
+      { headerName: "Product", field: "name" },
+      { headerName: 'Units', field: 'units' },
+      { headerName: 'Sales', field: 'sales' },
+      { headerName: 'Profit', field: 'profit' }
+
+    ];
+
+    let rowData = [
+      {
+        name: 'Chips',
+        units: '223',
+        sales: '$54,335',
+        profit: '$545,454'
+      },
+      .
+      .
+      .
+      {
+        name: 'Towels',
+        units: '965',
+        sales: '$1,900',
+        profit: '$800'
+      }
+    ];
+
+    let gridOptions = {
+      columnDefs: columnDefs,
+      rowData: rowData
+    };
+
+    return gridOptions;
+  })
+
+```
+
+This addon supports the same options as the [ag-grid](https://github.com/ceolter/ag-grid/) library. These options are documented here: [https://www.ag-grid.com/documentation-main/documentation.php](https://www.ag-grid.com/documentation-main/documentation.php). Open up an issue if you find an option that does not work with this addon.
 
 ## Running
 
@@ -19,8 +69,3 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember test`
 * `ember test --server`
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
