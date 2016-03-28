@@ -58,6 +58,35 @@ ember install ember-ag-grid
 
 This addon supports the same options as the [ag-grid](https://github.com/ceolter/ag-grid/) library. These options are documented here: [https://www.ag-grid.com/documentation-main/documentation.php](https://www.ag-grid.com/documentation-main/documentation.php). Open up an issue if you find an option that does not work with this addon.
 
+## Options
+
+| name | default | description |
+| --- | --- | --- |
+| width | 100% | Sets width of grid |
+| height | 100% | Sets height of grid |
+| theme | "ag-fresh" | ag-Grid provides three themes: ag-fresh, ag-blue and ag-dark |
+
+Example:
+
+```handlebars
+{{ ag-grid gridOptions=gridOptions height="500px" width="800px" theme="ag-blue" }}
+```
+
+You could create a new theme and pass in the class name your theme uses:
+
+```css
+.newTheme .ag-root {
+  font-family: "Open Sans", sans-serif, Helvetica, Arial;
+}
+.newTheme .ag-cell {
+  padding: 8px;
+}
+```
+
+```handlebars
+{{ ag-grid gridOptions=gridOptions theme="newTheme" }}
+```
+
 ## Running
 
 * `ember server`
