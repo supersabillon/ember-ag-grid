@@ -10,12 +10,12 @@ ember install ember-ag-grid
 
 ## Usage
 
-*app/templates/components/grid-exampple.hbs*
+*app/templates/components/grid-example.hbs*
 ```handlebars
 {{ ag-grid gridOptions=gridOptions }}
 ```
 
-*app/components/grid-exampple.js*
+*app/components/grid-example.js*
 ```javascript
 
   gridOptions: computed(function() {
@@ -62,8 +62,8 @@ This addon supports the same options as the [ag-grid](https://github.com/ceolter
 
 | name | default | description |
 | --- | --- | --- |
-| width | 100% | Sets width of grid |
-| height | 100% | Sets height of grid |
+| width | "100%" | Sets width of grid |
+| height | "100%" | Sets height of grid |
 | theme | "ag-fresh" | ag-Grid provides three themes: ag-fresh, ag-blue and ag-dark |
 
 Example:
