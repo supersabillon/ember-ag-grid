@@ -46,7 +46,7 @@ export default Component.extend({
     }
 
     run.scheduleOnce('afterRender', () => {
-      agGrid.Grid(this.$('.agGrid')[0], this.get('gridOptions'));
+      new agGrid.Grid(this.$('.agGrid')[0], this.get('gridOptions'));
     });
   },
 
