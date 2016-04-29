@@ -1,6 +1,8 @@
 # Ember-ag-grid
 
+[![Build Status](https://travis-ci.org/supersabillon/ember-ag-grid.svg?branch=master)](https://travis-ci.org/supersabillon/ember-ag-grid)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-ag-grid.svg)](http://emberobserver.com/addons/ember-ag-grid)
+[![Code Climate](https://codeclimate.com/github/supersabillon/ember-ag-grid/badges/gpa.svg)](https://codeclimate.com/github/supersabillon/ember-ag-grid)
 [![npm version](https://badge.fury.io/js/ember-ag-grid.svg)](https://badge.fury.io/js/ember-ag-grid)
 
 Just a simple component to use [ag-grid](https://github.com/ceolter/ag-grid/).
