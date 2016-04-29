@@ -1,23 +1,22 @@
 import Ember from "ember";
 
-const {
-  Component,
-  computed
-} = Ember;
+export default Ember.Component.extend({
 
-export default Component.extend({
-
-  gridOptions: computed(function() {
-
-    let columnDefs = [
-      { headerName: "Product", field: "name" },
-      { headerName: 'Units', field: 'units' },
-      { headerName: 'Sales', field: 'sales' },
-      { headerName: 'Profit', field: 'profit' }
-
-    ];
-
-    let rowData = [
+  gridOptions: {
+    columnDefs: [
+      {
+        headerName: "Product", field: "name"
+      },
+      {
+        headerName: 'Units', field: 'units'
+      },
+      {
+        headerName: 'Sales', field: 'sales'
+      },
+      {
+        headerName: 'Profit', field: 'profit'
+      }],
+    rowData: [
       {
         name: 'Chips',
         units: '223',
@@ -77,15 +76,6 @@ export default Component.extend({
         units: '8,530',
         sales: '$5,465',
         profit: '$1,554'
-      },
-    ];
-
-    let gridOptions = {
-      columnDefs: columnDefs,
-      rowData: rowData
-    };
-
-    return gridOptions;
-  })
-
+      }]
+  }
 });
