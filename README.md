@@ -1,5 +1,8 @@
 # Ember-ag-grid
 
+[![Ember Observer Score](http://emberobserver.com/badges/ember-ag-grid.svg)](http://emberobserver.com/addons/ember-ag-grid)
+[![npm version](https://badge.fury.io/js/ember-ag-grid.svg)](https://badge.fury.io/js/ember-ag-grid)
+
 Just a simple component to use [ag-grid](https://github.com/ceolter/ag-grid/).
 
 ## Installation
