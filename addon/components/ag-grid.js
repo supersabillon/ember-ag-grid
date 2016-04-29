@@ -5,7 +5,7 @@ const {
   computed,
   run,
   String,
-  assert,
+  assert
 } = Ember;
 
 export default Component.extend({
