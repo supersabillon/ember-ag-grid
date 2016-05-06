@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('complex-example');
   this.route('multipleheaders-examples');
   this.route('pagination-example');
+  this.route('tree-data-example');
 });
 
 export default Router;
