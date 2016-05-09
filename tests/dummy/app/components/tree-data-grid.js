@@ -228,7 +228,6 @@ export default Ember.Component.extend({
     ],
     rowSelection: 'multiple',
     enableColResize: true,
-    enableSorting: true,
     rowHeight: 20,
     getNodeChildDetails: function(file) {
         if (file.folder) {

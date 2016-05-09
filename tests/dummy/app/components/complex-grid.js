@@ -33,6 +33,7 @@ export default Component.extend({
       columnDefs: columnDefs,
       rowData: model,
       rowHeight: 40,
+      enableSorting: true,
       enableColResize: true,
       suppressCellSelection: true, //remove option to click on cell
     };
