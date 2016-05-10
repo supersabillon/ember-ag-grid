@@ -37,6 +37,44 @@ nav {
   margin-bottom: 20px;
 }
 
+.players .example {
+  width: auto;
+  float: left;
+}
+
+.profile h4 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.players .more-info {
+  padding: 0 40px;
+  float: right;
+  width: 450px;
+}
+
+.players .more-info  ul {
+  list-style: none;
+  float: right;
+  padding-left: 10px;
+  max-width: 200px;
+}
+
+.players .more-info  ul li  {
+  padding: 2px;
+}
+
+.players .more-info  ul li span {
+  color: #0b0b5c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.players .more-info img {
+  border-radius: 5%;
+  float: left;
+}
+
 /* ag bootstrap striped 
 https://gist.github.com/Amdingo/34a5f1b5155bf186e14d
 */

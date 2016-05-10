@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('multipleheaders-examples');
   this.route('pagination-example');
   this.route('tree-data-example');
+  this.route('row-selection-example');
 });
 
 export default Router;
