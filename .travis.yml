@@ -1,7 +1,7 @@
 ---
 language: node_js
 node_js:
-  - "4.4.0"
+  - "4"
 
 sudo: false
 
@@ -21,12 +21,11 @@ matrix:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
 before_install:
-  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
-  - "npm config set spin false"
-  - "npm install -g npm@^2"
+  - npm config set spin false
+  - npm install -g bower
+  - npm install -g phantomjs-prebuilt@2
 
 install:
-  - npm install -g bower
   - npm install
   - bower install
 
