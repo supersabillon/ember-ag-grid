@@ -23,17 +23,16 @@ ember install ember-ag-grid
 *app/components/grid-example.js*
 ```javascript
 
-  gridOptions: computed(function() {
+  gridOptions: {
 
-    let columnDefs = [
+    columnDefs: [
       { headerName: "Product", field: "name" },
       { headerName: 'Units', field: 'units' },
       { headerName: 'Sales', field: 'sales' },
       { headerName: 'Profit', field: 'profit' }
+    ],
 
-    ];
-
-    let rowData = [
+    rowData: [
       {
         name: 'Chips',
         units: '223',
@@ -48,15 +47,7 @@ ember install ember-ag-grid
         units: '965',
         sales: '$1,900',
         profit: '$800'
-      }
-    ];
-
-    let gridOptions = {
-      columnDefs: columnDefs,
-      rowData: rowData
-    };
-
-    return gridOptions;
+      }]
   })
 
 ```
