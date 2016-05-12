@@ -1,6 +1,6 @@
 {
   "name": "ember-ag-grid",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "An ag-Grid component for ember cli",
   "directories": {
     "doc": "doc",
