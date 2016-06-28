@@ -76,6 +76,7 @@ export default Ember.Component.extend({
         units: '8,530',
         sales: '$5,465',
         profit: '$1,554'
-      }]
+      }],
+      showToolPanel: true
   }
 });
