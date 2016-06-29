@@ -1,7 +1,9 @@
 module.exports = {
   normalizeEntityName: function() {},
 
-  afterInstall: function() {
-    return this.addBowerPackageToProject('ag-grid');
+  afterInstall: function(options) {
+    return this.addBowerPackagesToProject([
+      { name: 'ag-grid', target: '^4.2.7'},
+      { name: 'ag-grid-enterprise', target: '^4.2.11'}]);
   }
 };

@@ -7,6 +7,10 @@ module.exports = {
   included: function(app) {
     this._super.included(app);
 
-    app.import(app.bowerDirectory + '/ag-grid/dist/ag-grid.js');
+    if (app.options.agGridEnterprise) {
+      app.import(app.bowerDirectory + '/ag-grid-enterprise/dist/ag-grid-enterprise.min.js');
+    } else {
+    app.import(app.bowerDirectory + '/ag-grid/dist/ag-grid.min.js');
+    }
   }
 };
