@@ -83,6 +83,21 @@ You could create a new theme and pass in the class name your theme uses:
 {{ ag-grid gridOptions=gridOptions theme="newTheme" }}
 ```
 
+## ag-Grid-Enterprise
+
+To use [ag-Grid Enterprise](https://github.com/ceolter/ag-grid-enterprise) features set the following options:
+
+*config/environment.js*
+```javascript
+  var ENV = {
+    agGrid: {
+      useEnterprise: true,
+      licenseKey: 'YOUR_LICENSE_KEY'
+    }
+  }
+
+```
+
 ## Running
 
 * `ember server`
