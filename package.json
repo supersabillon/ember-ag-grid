@@ -17,6 +17,9 @@
   },
   "author": "Joel Sabillon",
   "license": "MIT",
+  "dependencies": {
+    "ember-cli-babel": "^5.1.5"
+  },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
@@ -50,9 +53,6 @@
     "grid",
     "table"
   ],
-  "dependencies": {
-    "ember-cli-babel": "^5.1.5"
-  },
   "ember-addon": {
     "configPath": "tests/dummy/config"
   }
