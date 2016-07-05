@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from 'ember-get-config';
 
 const {
   Component,
@@ -38,15 +39,21 @@ export default Component.extend({
 
   didInsertElement() {
     this._super(...arguments);
-    
+
     let defaults = {columnDefs: [], rowData: []};
+    const agGridOptions = typeof config !== "undefined" ? config.agGrid : false;
     
     if (!this.get('gridOptions')) {
       this.set('gridOptions', defaults);
     }
 
     run.scheduleOnce('afterRender', () => {
+      if (agGridOptions && agGridOptions.useEnterprise && agGridOptions.licenseKey) {
+        agGrid.LicenseManager.setLicenseKey(agGridOptions.licenseKey);
+      }
+
       new agGrid.Grid(this.$('.agGrid')[0], this.get('gridOptions'));
+
     });
   },
 
