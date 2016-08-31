@@ -36,15 +36,16 @@ export default Component.extend({
       rowModelType: 'pagination',
       suppressCellSelection: true, //remove option to click on cell
       suppressMovableColumns: true, //remove option to move columns
+      paginationPageSize: pageSize,
       onGridReady: () => {
-       this.createNewDatasource(model, pageSize);
+       this.createNewDatasource(model);
       } 
      };
 
     return gridOptions;
   }),
   
-  createNewDatasource(data, pageSize) {
+  createNewDatasource(data) {
     if (!data) {
         // in case user selected 'onPageSizeChanged()' before the json was loaded
         return;
@@ -52,7 +53,6 @@ export default Component.extend({
 
     let dataSource = {
         //rowCount: ???, - not setting the row count, infinite paging will be used
-        pageSize: pageSize, // changing to number, as scope keeps it as a string
         getRows: function (params) {
             // this code should contact the server for rows. however for the purposes of the demo,
             // the data is generated locally, a timer is used to give the experience of
@@ -79,8 +79,8 @@ export default Component.extend({
     
   actions: {
     selectPagination(pageSize) {
-      let newPageSize = parseInt(pageSize);
-      this.createNewDatasource(this.get('model'), newPageSize);
+      this.get('contacts').paginationPageSize = Number(pageSize);
+      this.createNewDatasource(this.get('model'));
     }
   }
   

@@ -3,9 +3,10 @@
 {{input class="input-theme" placeholder="Filter..." key-up="filterChanged"}}
 {{ag-grid height="500px" gridOptions=categories theme=theme }}
 <p>Theme: <select class="ember-select" onchange={{action "selectTheme" value="target.value"}}>
-  <option value="ag-bootstrap-striped" selected="selected">Bootstrap Striped</option>
+  <option value="ag-bootstrap" selected="selected">Bootstrap</option>
   <option value="ag-fresh">Fresh</option>
   <option value="ag-blue">Blue</option>
   <option value="ag-dark">Dark</option>
+  <option value="ag-material">Material</option>
 </select></p>
 </section>

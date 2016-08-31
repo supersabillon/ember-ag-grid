@@ -15,7 +15,7 @@ export default Component.extend({
   tagName: 'div',
   theme: 'ag-fresh',
   width: '100%',
-  height: '100%',
+  height: '400px',
   gridOptions: undefined,
 
   containerStyle: computed('width', 'height', function () {
