@@ -48,7 +48,7 @@ ember install ember-ag-grid
         sales: '$1,900',
         profit: '$800'
       }]
-  })
+  }
 
 ```
 
@@ -59,8 +59,8 @@ This addon supports the same options as the [ag-grid](https://github.com/ceolter
 | name | default | description |
 | --- | --- | --- |
 | width | "100%" | Sets width of grid |
-| height | "100%" | Sets height of grid |
-| theme | "ag-fresh" | ag-Grid provides three themes: ag-fresh, ag-blue and ag-dark |
+| height | "400px" | Sets height of grid |
+| theme | "ag-fresh" | ag-Grid provides three themes: ag-fresh, ag-blue, ag-dark, ag-bootstrap and ag-material |
 
 Example:
 
@@ -97,6 +97,11 @@ To use [ag-Grid Enterprise](https://github.com/ceolter/ag-grid-enterprise) featu
   }
 
 ```
+
+## Changelog
+### version 0.2.0
+* Upgraded to ag-Grid 5.3.0 and ag-Grid-Enterprise 5.3.0 ([ag-Grid's changelog](https://www.ag-grid.com/change-log/changeLogIndex.php))
+* Breaking change: Default height is now 400px. ([Read this issue](https://github.com/ceolter/ag-grid/issues/878))
 
 ## Running
 

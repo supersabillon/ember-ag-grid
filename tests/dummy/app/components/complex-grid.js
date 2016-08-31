@@ -7,7 +7,7 @@ const {
 
 export default Component.extend({
 
-  theme: 'ag-bootstrap-striped',
+  theme: 'ag-bootstrap',
 
   categories: computed(function() {
     let model = this.get('model');
