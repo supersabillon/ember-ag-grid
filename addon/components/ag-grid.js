@@ -5,7 +5,6 @@ const {
   Component,
   computed,
   run,
-  String,
   assert
 } = Ember;
 
@@ -30,7 +29,7 @@ export default Component.extend({
       this._escapeCSS(height)
     );
 
-    return String.htmlSafe(`width: ${width}; height: ${height};`);
+    return Ember.String.htmlSafe(`width: ${width}; height: ${height};`);
   }),
 
   _escapeCSS(css) {
