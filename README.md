@@ -60,7 +60,7 @@ This addon supports the same options as the [ag-grid](https://github.com/ceolter
 | --- | --- | --- |
 | width | "100%" | Sets width of grid |
 | height | "400px" | Sets height of grid |
-| theme | "ag-fresh" | ag-Grid provides three themes: ag-fresh, ag-blue, ag-dark, ag-bootstrap and ag-material |
+| theme | "ag-fresh" | ag-Grid provides four themes: ag-fresh, ag-blue, ag-dark, ag-bootstrap and ag-material |
 
 Example:
 
