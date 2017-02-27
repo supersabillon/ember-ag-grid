@@ -21,7 +21,7 @@ module.exports = {
   name: 'ember-ag-grid',
 
   included: function(app) {
-    this._super.included(app);
+    this._super.included.apply(this, arguments);
 
     if (typeof env.agGrid !== "undefined" && env.agGrid.useEnterprise) {
       app.import(app.bowerDirectory + '/ag-grid-enterprise/dist/ag-grid-enterprise.min.js');
