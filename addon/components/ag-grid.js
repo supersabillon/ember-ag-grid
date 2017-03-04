@@ -58,7 +58,9 @@ export default Component.extend({
 
   willDestroyElement() {
     this._super(...arguments);
-    this.get('gridOptions').api.destroy();
+    if (this.get('gridOptions') && this.get('gridOptions').api) {
+      this.get('gridOptions').api.destroy();
+    }
   }
 
 });
