@@ -1,6 +1,6 @@
 {
   "name": "ember-ag-grid",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "An ag-Grid component for ember cli",
   "keywords": [
     "ember-addon",

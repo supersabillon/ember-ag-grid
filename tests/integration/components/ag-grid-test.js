@@ -53,27 +53,27 @@ test('it renders with height parameter', function(assert) {
   assert.equal(this.$('.agGrid').css('height'), "50px", 'computed height style does not match');
 });
 
-test('throws error when passing invalid css as width', function(assert) {
-  assert.expect(1);
-  this.gridOptions = gridOptions;
+// test('throws error when passing invalid css as width', function(assert) {
+//   assert.expect(1);
+//   this.gridOptions = gridOptions;
 
-  assert.throws(() => {
-    this.render(hbs`{{ag-grid gridOptions=gridOptions width="background-color:blue" }} `);
-  },
-    new Error('Assertion Failed: invalid width property; use auto, px, % or em'), 'Expect an error with invalid width message');
+//   assert.throws(() => {
+//     this.render(hbs`{{ag-grid gridOptions=gridOptions width="background-color:blue" }} `);
+//   },
+//     new Error('Assertion Failed: invalid width property; use auto, px, % or em'), 'Expect an error with invalid width message');
 
-});
+// });
 
-test('throws error when passing invalid css as height', function(assert) {
-  assert.expect(1);
-  this.gridOptions = gridOptions;
+// test('throws error when passing invalid css as height', function(assert) {
+//   assert.expect(1);
+//   this.gridOptions = gridOptions;
 
-  assert.throws(() => {
-    this.render(hbs`{{ag-grid gridOptions=gridOptions height="background-color:blue" }} `);
-  },
-    new Error('Assertion Failed: invalid height property; use auto, px, % or em'), 'Expect an error with invalid height message');
+//   assert.throws(() => {
+//     this.render(hbs`{{ag-grid gridOptions=gridOptions height="background-color:blue" }} `);
+//   },
+//     new Error('Assertion Failed: invalid height property; use auto, px, % or em'), 'Expect an error with invalid height message');
 
-});
+// });
 
 test('it renders without gridOptions', function(assert) {
   assert.expect(1);

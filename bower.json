@@ -8,6 +8,6 @@
     "bootstrap": "~3.3.5",
     "bower": "*",
     "install": "^1.0.4",
-    "ag-grid-enterprise": "^9.0.1"
+    "ag-grid": "^9.0.0"
   }
 }
