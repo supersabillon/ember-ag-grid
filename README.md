@@ -60,7 +60,7 @@ This addon supports the same options as the [ag-grid](https://github.com/ceolter
 | --- | --- | --- |
 | width | "100%" | Sets width of grid |
 | height | "400px" | Sets height of grid |
-| theme | "ag-fresh" | ag-Grid provides four themes: ag-fresh, ag-blue, ag-dark, ag-bootstrap and ag-material |
+| theme | "ag-fresh" | Themes provided by ag-Grid: ag-fresh, ag-blue, ag-dark, ag-bootstrap and ag-material |
 
 Example:
 
@@ -99,6 +99,16 @@ To use [ag-Grid Enterprise](https://github.com/ceolter/ag-grid-enterprise) featu
 ```
 
 ## Changelog
+## version 0.4.0
+* Upgraded to ag-Grid 9.0.0 and ag-Grid-Enterprise 9.0.1 ([ag-Grid's changelog](https://www.ag-grid.com/change-log/changeLogIndex.php))
+
+## version 0.3.1
+* [BUGFIX] Fix error of gridOptions api not available on willDestroyElement hook
+* [BUGFIX] Ensure super call is bounded
+
+## version 0.3.0
+* Upgraded to ag-Grid 8.0.1 and ag-Grid-Enterprise 8.0.1 ([ag-Grid's changelog](https://www.ag-grid.com/change-log/changeLogIndex.php))
+
 ### version 0.2.0
 * Upgraded to ag-Grid 5.3.0 and ag-Grid-Enterprise 5.3.0 ([ag-Grid's changelog](https://www.ag-grid.com/change-log/changeLogIndex.php))
 * Breaking change: Default height is now 400px. ([Read this issue](https://github.com/ceolter/ag-grid/issues/878))
