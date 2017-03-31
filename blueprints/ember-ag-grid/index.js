@@ -3,7 +3,7 @@ module.exports = {
 
   afterInstall: function(options) {
     return this.addBowerPackagesToProject([
-      { name: 'ag-grid', target: '^8.0.1'},
-      { name: 'ag-grid-enterprise', target: '^8.0.1'}]);
+      { name: 'ag-grid', target: '^9.0.0'},
+      { name: 'ag-grid-enterprise', target: '^9.0.1'}]);
   }
 };
