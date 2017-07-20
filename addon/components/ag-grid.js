@@ -1,3 +1,4 @@
+/*global agGrid*/
 import Ember from 'ember';
 import config from 'ember-get-config';
 

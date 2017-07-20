@@ -57,7 +57,9 @@ export default Component.extend({
             // this code should contact the server for rows. however for the purposes of the demo,
             // the data is generated locally, a timer is used to give the experience of
             // an asynchronous call
+            /* eslint-disable no-console */
             console.log('asking for ' + params.startRow + ' to ' + params.endRow);
+            /* eslint-enable no-console */
             setTimeout( function() {
                 // take a chunk of the array, matching the start and finish times
                 let rowsThisPage = data.slice(params.startRow, params.endRow);
